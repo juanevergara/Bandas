@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <% for (let i = 0; i < bandas.length; i++){ %> 
+        <a href="http://localhost:3000/bandas/detalle/<%- bandas[i].id %>">
+                <h1> 
+                    <%- bandas[i].nombre %>
+                </h1>
+        </a>              
+                <img src="/<%- bandas[i].cover %>" alt="imagen de <%-bandas[i].nombre %>" width= 300px>
+    
+   <% } %>
+</body>
+</html>
